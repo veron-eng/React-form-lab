@@ -3,11 +3,11 @@ const Cake = ({cakeName, ingredients, rating}) => {
     return (
         <div className="cakes">
          <h3>Cake name: {cakeName}</h3>
-                <ul>
+            <h4>Ingredients:</h4> {ingredients}
+            <br></br>
+        
+            Rating: {rating}
                 
-                    <li>Ingredients: {ingredients}</li> 
-                    <li>Rating: {rating}</li>
-                </ul>
     
         </div>
     )

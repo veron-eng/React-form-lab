@@ -13,9 +13,9 @@ function App() {
         <Title />
       </header>
       <main>
-        <RecipeContainer />
         <Search />
-        <CakeForm />
+        <RecipeContainer />
+        
       </main>
     </>
   );

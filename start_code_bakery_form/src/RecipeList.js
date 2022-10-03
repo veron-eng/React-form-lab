@@ -3,8 +3,20 @@ const RecipeList = ({cakes}) => {
 
     return (
         <>
-            <section>
-                {
+            <section>{
+            cakes.map((cake, index)=> {
+                    return <Cake key={index} 
+                    cakeName={cake.cakeName} 
+                    ingredients={cake.ingredients.map((ingredient, index) => {
+                        return(
+                            <li key={index}>{ingredient}</li>
+                        )
+                    })} rating={cake.rating} />
+                })
+            }
+
+
+                {/* {
                     cakes.map((cake, index) => {
                         return(
                             <div key={index}>
@@ -19,7 +31,7 @@ const RecipeList = ({cakes}) => {
                             </div>
                         )
                     })
-                }
+                } */}
             </section>
             <section>
                 <h4>Average cake rating: </h4>
